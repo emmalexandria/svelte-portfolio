@@ -1,5 +1,5 @@
 <script>
-	import Button from '$lib/components/Button.svelte';
+	import Button from '$lib/components/button/Button.svelte';
 	import Review from '$lib/components/Review.svelte';
 	import ArrowDown from 'lucide-svelte/icons/arrow-down';
 </script>

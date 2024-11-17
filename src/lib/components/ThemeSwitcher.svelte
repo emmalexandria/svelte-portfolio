@@ -9,7 +9,7 @@
 	import { ThemeOption } from '$lib/themes.svelte';
 	import ThemeToggle from './ThemeToggle.svelte';
 	import { Contrast } from 'lucide-svelte';
-	import Button from './Button.svelte';
+	import Button from '$lib/components/button/Button.svelte';
 	import { fly, slide } from 'svelte/transition';
 
 	let dark = new ThemeOption('dark', 'dark', '(prefers-color-scheme: dark)');

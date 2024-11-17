@@ -35,16 +35,16 @@ export default {
         sc: ['Vollkorn SC', 'serif']
       },
       fontSize: {
-        "body-small": ["0.8rem", { lineHeight: "1.2", fontWeight: 400, letterSpacing: "0.03em" }],
-        body: ["1rem", { lineHeight: "1.2", fontWeight: 400, letterSpacing: "0.03em" }],
-        "body-large": ["1.25rem", { lineHeight: "1.2", fontWeight: 400, letterSpacing: "0.03em" }],
+        "body-small": ["0.8rem", { lineHeight: "1.6", fontWeight: 400, letterSpacing: "0.03em" }],
+        body: ["1rem", { lineHeight: "1.6", fontWeight: 400, letterSpacing: "0.03em" }],
+        "body-large": ["1.25rem", { lineHeight: "1.6", fontWeight: 400, letterSpacing: "0.03em" }],
         "hero": ["4.77rem", { lineHeight: "1", fontWeight: 900, letterSpacing: "0.00em" }],
         "hero-mobile": ["3.815rem", { lineHeight: "1.2", fontWeight: 900, letterSpacing: "0.00em" }],
-        "title": ["3.815rem", { lineHeight: "1.6", fontWeight: 700, letterSpacing: "0.03em" }],
-        "header": ["3.052rem", { lineHeight: "1.6", fontWeight: 700, letterSpacing: "0.03em" }],
-        "subheader": ["2.441rem", { lineHeight: "1.6", fontWeight: 700, letterSpacing: "0.03em" }],
-        "subsubheader": ["1.953rem", { lineHeight: "1.6", fontWeight: 700, letterSpacing: "0.03em" }],
-        "body-header": ["1.563rem", { lineHeight: "1.6", fontWeight: 700, letterSpacing: "0.03em" }],
+        "title": ["3.815rem", { lineHeight: "1.2", fontWeight: 700, letterSpacing: "0.03em" }],
+        "header": ["3.052rem", { lineHeight: "1.2", fontWeight: 700, letterSpacing: "0.03em" }],
+        "subheader": ["2.441rem", { lineHeight: "1.2", fontWeight: 700, letterSpacing: "0.03em" }],
+        "subsubheader": ["1.953rem", { lineHeight: "1.2", fontWeight: 700, letterSpacing: "0.03em" }],
+        "body-header": ["1.563rem", { lineHeight: "1.2", fontWeight: 700, letterSpacing: "0.03em" }],
       },
       colors: {
         'mono': {
