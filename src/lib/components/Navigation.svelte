@@ -4,7 +4,7 @@
 	import ThemeSwitcher from './ThemeSwitcher.svelte';
 </script>
 
-<div class="p-4 w-full">
+<div class="px-4 pt-4 w-full">
 	<nav
 		class=" bg-mono-50 dark:bg-mono-950 p-4 flex flex-row items-center border-thick rounded-giant border-mono-950 dark:border-mono-50"
 	>

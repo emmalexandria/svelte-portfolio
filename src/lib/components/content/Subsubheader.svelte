@@ -7,7 +7,7 @@
 	import clsx from 'clsx';
 
 	let { children }: Props = $props();
-	let styles = $derived(clsx('text-mono-950 text-title font-bold dark:text-mono-50', {}));
+	let styles = $derived(clsx('text-mono-950 text-subsubheader font-serif dark:text-mono-50', {}));
 </script>
 
-<p class={styles}>{@render children()}</p>
+<h4 class={styles}>{@render children()}</h4>

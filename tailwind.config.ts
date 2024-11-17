@@ -42,9 +42,9 @@ export default {
         "hero-mobile": ["3.815rem", { lineHeight: "1.2", fontWeight: 900, letterSpacing: "0.00em" }],
         "title": ["3.815rem", { lineHeight: "1.2", fontWeight: 700, letterSpacing: "0.03em" }],
         "header": ["3.052rem", { lineHeight: "1.2", fontWeight: 700, letterSpacing: "0.03em" }],
-        "subheader": ["2.441rem", { lineHeight: "1.2", fontWeight: 700, letterSpacing: "0.03em" }],
-        "subsubheader": ["1.953rem", { lineHeight: "1.2", fontWeight: 700, letterSpacing: "0.03em" }],
-        "body-header": ["1.563rem", { lineHeight: "1.2", fontWeight: 700, letterSpacing: "0.03em" }],
+        "subheader": ["2.441rem", { lineHeight: "1.2", fontWeight: 600, letterSpacing: "0.03em" }],
+        "subsubheader": ["1.953rem", { lineHeight: "1.2", fontWeight: 600, letterSpacing: "0.03em" }],
+        "body-header": ["1.563rem", { lineHeight: "1.2", fontWeight: 500, letterSpacing: "0.03em" }],
       },
       colors: {
         'mono': {

@@ -52,10 +52,10 @@
 			class="flex justify-center items-center mt-6 flex-col gap-4 absolute end-0 translate-x-[18px] p-4 bg-mono-50 dark:bg-mono-950 border-thick border-mono-950 dark:border-mono-50 rounded-large"
 		>
 			<ThemeToggle theme={dark}>
-				<Moon strokeWidth="2px" size="16px"></Moon>
+				<Moon strokeWidth="2px" size="24px"></Moon>
 			</ThemeToggle>
 			<ThemeToggle theme={highContrast}>
-				<Contrast strokeWidth="2px" size="16px"></Contrast>
+				<Contrast strokeWidth="2px" size="24px"></Contrast>
 			</ThemeToggle>
 			<Button
 				size="small"

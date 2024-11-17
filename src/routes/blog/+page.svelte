@@ -1,7 +1,9 @@
 <script lang="ts">
+	import PostCard from '$src/lib/components/blog/PostCard.svelte';
+
 	let { data } = $props();
 </script>
 
 {#each data.posts as post}
-	<h1>{post.title}</h1>
+	<PostCard {post} />
 {/each}

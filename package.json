@@ -49,8 +49,12 @@
     "@fontsource-variable/exo-2": "^5.1.0",
     "@fontsource-variable/vollkorn": "^5.1.1",
     "@fontsource/vollkorn-sc": "^5.1.0",
+    "@sveltejs/adapter-static": "^3.0.6",
     "clsx": "^2.1.1",
     "lucide-svelte": "^0.460.1",
+    "rehype-slug": "^6.0.0",
+    "remark-toc": "^9.0.0",
+    "shiki": "^1.23.0",
     "tailwindcss-accessible-variants": "^1.0.2"
   },
   "eslintConfig": {
