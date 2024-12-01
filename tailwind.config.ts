@@ -74,9 +74,12 @@ export default {
           '800': '#963f16',
           '900': '#793515',
           '950': '#411909',
-        },
+        }
       },
-    }
+      spacing: {
+        'content': '75ch'
+      }
+    },
   },
 
   plugins: [accessibleVariants]

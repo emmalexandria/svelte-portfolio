@@ -24,15 +24,15 @@
 
 	let classes = $derived(
 		clsx(
-			'box-border text-mono-950 w-fit transiton-all ease-in-out font-sans leading-none transition-all border-regular flex flex-row items-end gap-1 justify-center',
+			'border-regular box-border w-fit transiton-all ease-in-out font-sans leading-none transition-all flex flex-row items-end gap-1 justify-center',
 			{
-				'border-mono-950 bg-primary-500 dark:text-mono-50 text-mono-950 hover:dark:bg-primary-400 dark:border-mono-50 hover:bg-primary-600':
+				'border-primary-600 text-primary-600 dark:border-primary-500  dark:text-primary-500 hover:text-primary-950 hover:dark:bg-primary-500 hover:dark:border-primary-500 hover:boder-primary-600 hover:bg-primary-600':
 					primary,
 				'border-mono-950 dark:text-mono-50 hover:bg-mono-950 hover:text-mono-50 dark:border-mono-50  hover:dark:bg-mono-50 hover:dark:text-mono-950 ':
 					!primary,
 				'text-body-small p-2 rounded-normal font-bold': size == 'small',
-				'text-body px-3 py-2 rounded-normal font-bold': size == 'medium',
-				'text-body-large px-4 py-3 rounded-normal font-bold': size == 'large'
+				'text-body p-3 rounded-normal font-bold': size == 'medium',
+				'text-body-large p-3 rounded-normal font-bold': size == 'large'
 			}
 		)
 	);

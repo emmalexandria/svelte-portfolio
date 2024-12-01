@@ -15,6 +15,8 @@
 	let dark = new ThemeOption('dark', 'dark', '(prefers-color-scheme: dark)');
 	let highContrast = new ThemeOption('high-contrast', 'high-contrast', '(prefers-contrast: more)');
 
+	import { clickOutside } from '$lib';
+
 	let shown = $state(false);
 
 	onMount(() => {
@@ -39,23 +41,28 @@
 	</script>
 </svelte:head>
 
-<div class="relative">
+<div
+	class="relative"
+	use:clickOutside={() => {
+		shown = false;
+	}}
+>
 	<button
-		class="text-mono-700 dark:text-mono-200 hover:text-mono-950 hover:dark:text-mono-50 p-2 rounded-full transition-all"
+		class="text-mono-700 h-full dark:text-mono-200 hover:text-mono-950 hover:dark:text-mono-50 p-2 rounded-full transition-all"
 		onclick={() => {
 			shown = !shown;
-		}}><Palette strokeWidth="2px" /></button
+		}}><Palette class="stroke-regular h-5" strokeWidth="2px" /></button
 	>
 	{#if shown}
 		<div
 			transition:fly={{ delay: 50, duration: 100 }}
-			class="flex justify-center items-center mt-6 flex-col gap-4 absolute end-0 translate-x-[18px] p-4 bg-mono-50 dark:bg-mono-950 border-thick border-mono-950 dark:border-mono-50 rounded-large"
+			class="flex justify-center items-center flex-col gap-4 absolute end-0 top-0 translate-y-1/2 translate-x-[18px] p-4 bg-mono-50 dark:bg-mono-950 border-thick border-mono-950 dark:border-mono-50 rounded-large"
 		>
 			<ThemeToggle theme={dark}>
-				<Moon strokeWidth="2px" size="24px"></Moon>
+				<Moon class="stroke-regular" size="24px"></Moon>
 			</ThemeToggle>
 			<ThemeToggle theme={highContrast}>
-				<Contrast strokeWidth="2px" size="24px"></Contrast>
+				<Contrast class="stroke-regular" size="24px"></Contrast>
 			</ThemeToggle>
 			<Button
 				size="small"

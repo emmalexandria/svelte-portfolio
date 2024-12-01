@@ -1,0 +1,12 @@
+<script lang="ts">
+	import { type Snippet } from 'svelte';
+	interface Props {
+		children: Snippet;
+	}
+
+	let { children }: Props = $props();
+</script>
+
+<div class="grid grid-cols-3 gap-4 mt-8">
+	{@render children()}
+</div>

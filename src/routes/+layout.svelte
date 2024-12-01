@@ -11,7 +11,7 @@
 	import '@fontsource/vollkorn-sc/900.css';
 </script>
 
-<header class="sticky top-0 z-[5] bg-mono-50 dark:bg-mono-950">
+<header class="sticky top-0 z-[5]">
 	<Navigation />
 </header>
 <main>

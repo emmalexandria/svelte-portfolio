@@ -25,7 +25,7 @@
     after:transition-all peer-checked:bg-primary-500 dark:peer-checked:bg-primary-500"
 	></div>
 	<span
-		class="ml-2 opacity-50 text-mono-950 dark:text-mono-50 peer-checked:opacity-100 transition-all"
+		class="ml-2 text-mono-950 dark:text-mono-50 opacity-50 peer-checked:opacity-100 transition-all"
 		>{@render children()}</span
 	>
 </label>

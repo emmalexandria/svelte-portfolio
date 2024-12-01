@@ -4,9 +4,6 @@
 	}
 
 	let { data }: Props = $props();
-	$effect(() => {
-		console.log(data);
-	});
 </script>
 
 <data.content />

@@ -19,9 +19,11 @@
 		<img src={post.image.src} alt={post.image.alt} />
 	{/if}
 	<div class="p-4">
-		<h2 class="text-subsubheader">
-			{post.title}
-		</h2>
+		<a {href}>
+			<h2 class="text-subsubheader">
+				{post.title}
+			</h2>
+		</a>
 		<p class="text-body-small text-mono-gray-light my-1 dark:text-mono-gray-dark">{post.date}</p>
 		<p class="text-body mb-4 mt-1">
 			{post.summary}
@@ -29,7 +31,7 @@
 		<Button {href}>Read more</Button>
 		<span class="flex flex-row mt-4 gap-2">
 			{#each post.tags as tag}
-				<TagDisplay href="" {tag} />
+				<TagDisplay {tag} />
 			{/each}
 		</span>
 	</div>

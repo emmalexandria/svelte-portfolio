@@ -14,7 +14,7 @@
 	let { children, ...post }: Props = $props();
 </script>
 
-<div class="text-body font-sans max-w-[70ch] mx-auto mt-8">
+<div class="text-body font-sans max-w-content mx-auto mt-8">
 	<h1 class="text-title font-serif">{post.title}</h1>
 	<p class="text-body">{post.date}</p>
 
