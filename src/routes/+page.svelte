@@ -8,7 +8,7 @@
 	import ArrowDown from 'lucide-svelte/icons/arrow-down';
 </script>
 
-<section class="text-center md:mt-48 w-fit mx-auto">
+<section class="select-none text-center md:mt-48 w-fit mx-auto">
 	<h2 class="text-subsubheader font-serif">Hi, I'm Emma Alexandria</h2>
 	<h1 class="font-sc text-hero-mobile md:text-hero">
 		high quality <br />

@@ -24,7 +24,7 @@
 
 	let classes = $derived(
 		clsx(
-			'border-regular box-border shadow-hard hover:shadow-transparent hover:translate-y-[3px] w-fit transiton-all ease-in-out font-sans leading-none transition-all flex flex-row items-end gap-1 justify-center',
+			'border-regular box-border shadow-hard hover:shadow-none transition-all hover:translate-y-[3px] w-fit transiton-all ease-in-out font-sans leading-none  flex flex-row items-end gap-1 justify-center',
 			{
 				'border-primary-600 shadow-primary-600 dark:shadow-primary-500 text-primary-600 dark:border-primary-500  dark:text-primary-500 hover:text-primary-950 hover:dark:bg-primary-500 hover:dark:border-primary-500 hover:boder-primary-600 hover:bg-primary-600':
 					primary,
