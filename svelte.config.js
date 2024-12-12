@@ -1,11 +1,12 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { imagePreprocessor } from 'svimg';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   // Consult https://svelte.dev/docs/kit/integrations
   // for more information about preprocessors
-  preprocess: [vitePreprocess()],
+  preprocess: [imagePreprocessor({ inputDir: "static", outputDir: "static/g", webp: true, avif: true }), vitePreprocess()],
 
   kit: {
     alias: {

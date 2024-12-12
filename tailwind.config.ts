@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss';
-import { theme } from "tailwindcss";
 import accessibleVariants from 'tailwindcss-accessible-variants'
 
 export default {

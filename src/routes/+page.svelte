@@ -53,9 +53,14 @@
 	</Body>
 	<Subheader>Technologies</Subheader>
 	<Body>
-		I work with a wide variety of technologies. My favourite combination on the frontend is
-		SvelteKit, TailwindCSS, and Storybook. I find most backends are served well enough by a
-		PocketBase instance. However, I also have extensive experience with Next.js and Hugo. I
-		typically design mockups in Figma, and logos and other assets in Illustrator.
+		I work with a wide variety of technologies. My favourite frontend combination is Svelte with
+		TailwindCSS. I find most backends are served well enough by a PocketBase instance. However, I
+		also have considerable experience with Next.js and Hugo. I'm currently learning Vue and Nuxt.js.
+		I typically design mockups in Figma, and logos and other assets in Illustrator.
+	</Body>
+	<Subheader>Freelancing</Subheader>
+	<Body>
+		I currently work as a Freelancer through Upwork, which is where you should contact me if you're
+		interested in collaboration.
 	</Body>
 </section>
