@@ -17,39 +17,13 @@
 		</a>
 		<ul class="flex flex-row items-center gap-4">
 			<NavItem href="/portfolio">Portfolio</NavItem>
+			<NavItem href="/contact">Contact</NavItem>
 			<NavItem target="_blank" href="https://blog.emmalexandria.dev">
 				<div class="flex flex-row items-center gap-2">
 					Blog
 					<SquareArrowOutUpRight size="16" />
 				</div>
 			</NavItem>
-			<NavigationDropdown title="Contact">
-				<NavigationDropdownItem href="mailto:emma.jellemabutler@gmail.com">
-					{#snippet icon()}
-						<Email class="h-6" />
-					{/snippet}
-					Email
-				</NavigationDropdownItem>
-
-				<NavigationDropdownItem href="mailto:emma.jellemabutler@gmail.com">
-					{#snippet icon()}
-						<Email class="h-6" />
-					{/snippet}
-					Email
-				</NavigationDropdownItem>
-				<NavigationDropdownItem href="mailto:emma.jellemabutler@gmail.com">
-					{#snippet icon()}
-						<Email class="h-6" />
-					{/snippet}
-					Email
-				</NavigationDropdownItem>
-				<NavigationDropdownItem href="mailto:emma.jellemabutler@gmail.com">
-					{#snippet icon()}
-						<Email class="h-6" />
-					{/snippet}
-					Email
-				</NavigationDropdownItem>
-			</NavigationDropdown>
 		</ul>
 		<ThemeSwitcher />
 	</nav>

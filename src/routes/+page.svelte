@@ -44,7 +44,7 @@
 <section
 	class="max-w-content font-sans text-body mx-auto border-2 border-mono-950 rounded-md p-4 mt-16"
 >
-	<Header>About me</Header>
+	<Header id="about-me">About me</Header>
 	<Body>
 		I'm a passionate web developer and designer. I have a particular passion for web typgraphy.
 		Outside of work, I enjoy developing command-line tools and applications. I have experience in a

@@ -3,11 +3,12 @@
 
 	interface Props {
 		children: Snippet;
+		id?: string;
 	}
 	import clsx from 'clsx';
 
-	let { children }: Props = $props();
+	let { children, id }: Props = $props();
 	let styles = $derived(clsx('mt-4 mb-2 text-header  font-serif ', {}));
 </script>
 
-<h2 class={styles}>{@render children()}</h2>
+<h2 {id} class={styles}>{@render children()}</h2>
