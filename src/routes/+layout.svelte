@@ -15,5 +15,10 @@
 	<Navigation />
 </header>
 <main>
+	<img
+		class="sticky left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 opacity-70"
+		src="/under-construction.gif"
+	/>
+
 	{@render children()}
 </main>
