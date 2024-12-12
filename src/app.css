@@ -2,9 +2,9 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@layer base{
+@layer base {
   pre {
-    @apply rounded p-4 overflow-x-scroll
+    @apply rounded p-4 overflow-x-scroll;
   }
 
   .masonry-grid {
@@ -13,6 +13,10 @@
     grid-auto-rows: 0;
   }
 
+  ::selection {
+    @apply bg-primary-500 text-mono-950;
+  }
+
+
+
 }
-
-

@@ -25,7 +25,7 @@
 	}}
 >
 	<button
-		class="leading-none flex h-full flex-row gap-1 items-center p-2 font-serif text-body-large text-mono-gray-light dark:text-mono-gray-dark hover:dark:text-mono-50 hover:text-mono-950"
+		class="leading-none flex h-full flex-row gap-1 items-center p-2 font-serif text-body-large high-contrast:text-mono-950 dark:high-contrast:text-mono-50 text-mono-gray-light dark:text-mono-gray-dark hover:dark:text-mono-50 hover:text-mono-950"
 		onclick={() => {
 			open = !open;
 		}}

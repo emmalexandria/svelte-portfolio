@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import { theme } from "tailwindcss";
 import accessibleVariants from 'tailwindcss-accessible-variants'
 
 export default {
@@ -34,6 +35,15 @@ export default {
         sans: ['"Exo 2 Variable"', 'serif'],
         sc: ['Vollkorn SC', 'serif']
       },
+      boxShadow: {
+        'inner-hard': 'inset 0 4px 0px 0',
+        'hard': '0 3px 0px 0'
+      },
+      dropShadow: ({ theme }) => ({
+        'star': `1px 1px ${theme('colors.primary.900')}`,
+        'star-dark': `1px 1px ${theme('colors.primary.400')}`,
+        'primary-layers': [`2px 2px ${theme('colors.primary.700')}`, `2px 2px ${theme('colors.primary.800')}`],
+      }),
       fontSize: {
         "body-small": ["0.8rem", { lineHeight: "1.6", fontWeight: 400, letterSpacing: "0.03em" }],
         body: ["1rem", { lineHeight: "1.6", fontWeight: 400, letterSpacing: "0.03em" }],
@@ -50,14 +60,14 @@ export default {
         'mono': {
           '50': '#f6f6f6',
           '100': '#e7e7e7',
-          'gray-dark': '#d1d1d1',
+          'gray-dark': '#b0b0b0',
           '200': '#d1d1d1',
           '300': '#b0b0b0',
           '400': '#888888',
           '500': '#6d6d6d',
           '600': '#5d5d5d',
           '700': '#4f4f4f',
-          'gray-light': '#4f4f4f',
+          'gray-light': '#5d5d5d',
           '800': '#454545',
           '900': '#3d3d3d',
           '950': '#262626',

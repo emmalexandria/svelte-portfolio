@@ -11,15 +11,21 @@
 <section class="text-center md:mt-48 w-fit mx-auto">
 	<h2 class="text-subsubheader font-serif">Hi, I'm Emma Alexandria</h2>
 	<h1 class="font-sc text-hero-mobile md:text-hero">
-		high quality <br /> <span class="text-primary-600 dark:text-primary-400">code and design</span>
+		high quality <br />
+		<span
+			class="selection:drop-shadow-none text-primary-600 dark:text-primary-400 drop-shadow-primary-layers"
+			>code and design</span
+		>
 	</h1>
 	<span class="mt-8 flex flex-row gap-4 mx-auto w-fit">
 		<Button href="/contact" primary>Work with me</Button>
 		<Button href="#about-me">About me <ArrowDown size="1rem" /></Button>
 	</span>
 </section>
-<section class="px-4 mt-64 bg-primary-500 text-mono-950 dark:text-mono-50 py-8">
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<section
+	class="px-4 mt-64 bg-primary-500 text-mono-950 dark:text-mono-50 py-8 shadow-hard shadow-primary-700"
+>
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 		<Review author="Danijel Korent">
 			"Emma delivered excellent work, exceptionally fast! Her clear communication and proactive
 			approach made the entire process smooth and efficient. Would hire again!"
