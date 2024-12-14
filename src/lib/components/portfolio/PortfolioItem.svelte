@@ -15,12 +15,10 @@
 		technologies: string[];
 		description: string;
 		href: string;
-		github?: IconLink;
-		website?: IconLink;
+		icons?: IconLink[];
 	}
 
-	let { children, title, technologies, description, href, github, website }: PortfolioItemProps =
-		$props();
+	let { children, title, technologies, description, href, icons }: PortfolioItemProps = $props();
 </script>
 
 <div
@@ -31,10 +29,14 @@
 	</div>
 	<span class="flex flex-row items-center">
 		<h2 class="text-body-header font-serif font-bold mr-auto">{title}</h2>
-		{#if github}
-			<a class="hover:star-dark" href={github.href}
-				><PortfolioIconLink icon="fa6-brands:github" /></a
-			>
+		{#if icons}
+			<div class="flex flex-row items-center gap-2">
+				{#each icons as icon}
+					<a class="hover:star-dark" target="_blank" href={icon.href}>
+						<PortfolioIconLink icon={icon.icon} height={16} />
+					</a>
+				{/each}
+			</div>
 		{/if}
 	</span>
 	<p>{description}</p>

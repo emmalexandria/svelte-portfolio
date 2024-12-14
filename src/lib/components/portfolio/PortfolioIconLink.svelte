@@ -9,4 +9,4 @@
 	let { icon, height = '24' }: Props = $props();
 </script>
 
-<Icon class="hover:star-dark" {icon} {height} />
+<Icon class="hover:text-primary-500 " {icon} {height} />
