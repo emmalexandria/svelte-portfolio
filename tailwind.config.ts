@@ -35,13 +35,16 @@ export default {
         sc: ['Vollkorn SC', 'serif']
       },
       boxShadow: {
-        'inner-hard': 'inset 0 4px 0px 0',
-        'hard': '0 3px 0px 0'
+        'inner-hard': 'inset 4px 4px 0px 0',
+        'hard': '3px 3px 0px 0',
+        'hard-high': '6px 6px 0px 0'
       },
       dropShadow: ({ theme }) => ({
         'star': `1px 1px ${theme('colors.primary.900')}`,
         'star-dark': `1px 1px ${theme('colors.primary.400')}`,
         'primary-layers': [`2px 2px ${theme('colors.primary.700')}`, `2px 2px ${theme('colors.primary.800')}`],
+        'primary': [`2px 2px ${theme('colors.primary.400')}`],
+        'primary-dark': [`2px 2px ${theme('colors.primary.700')}`],
       }),
       fontSize: {
         "body-small": ["0.8rem", { lineHeight: "1.6", fontWeight: 400, letterSpacing: "0.03em" }],
@@ -57,19 +60,19 @@ export default {
       },
       colors: {
         'mono': {
-          '50': '#f6f6f6',
-          '100': '#e7e7e7',
-          'gray-dark': '#b0b0b0',
-          '200': '#d1d1d1',
-          '300': '#b0b0b0',
-          '400': '#888888',
-          '500': '#6d6d6d',
-          '600': '#5d5d5d',
-          '700': '#4f4f4f',
-          'gray-light': '#5d5d5d',
-          '800': '#454545',
-          '900': '#3d3d3d',
-          '950': '#262626',
+          '50': '#F8F8F8',
+          '100': '#eeeeee',
+          '200': '#AFAFAF',
+          'gray-dark': '#8A8A8A',
+          '300': '#8A8A8A',
+          '400': '#686868',
+          '500': '#5A5A5A',
+          '600': '#4D4D4D',
+          '700': '#404040',
+          'gray-light': '#4D4D4D',
+          '800': '#333333',
+          '900': '#262626',
+          '950': '#191919',
         },
         'primary': {
           '50': '#fff8ed',

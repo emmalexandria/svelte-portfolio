@@ -15,7 +15,7 @@
 		clsx('leading-none p-2 font-serif text-body-large', {
 			'text-mono-gray-light dark:text-mono-gray-dark hover:dark:text-mono-50 hover:text-mono-950 high-contrast:text-mono-950 high-contrast:dark:text-mono-50':
 				!active,
-			'text-mono-950 dark:text-mono-50 decoration-primary-500 underline decoration-2 underline-offset-1':
+			'text-mono-950 dark:text-mono-50 decoration-primary-500 underline decoration-2 underline-offset-2':
 				active
 		})
 	);

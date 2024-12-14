@@ -5,10 +5,13 @@
 	import BodyHeader from '$src/lib/components/content/BodyHeader.svelte';
 	import Header from '$src/lib/components/content/Header.svelte';
 	import Subheader from '$src/lib/components/content/Subheader.svelte';
+	import WindowButtons from '$src/lib/components/WindowButtons.svelte';
 	import ArrowDown from 'lucide-svelte/icons/arrow-down';
 </script>
 
-<section class="select-none text-center md:mt-48 w-fit mx-auto">
+<section
+	class="select-none bg-mono-50 dark:bg-mono-950 p-16 rounded-large shadow-hard-high shadow-mono-950 dark:shadow-mono-50 border-thick border-mono-950 dark:border-mono-50 text-center md:mt-32 w-fit mx-auto"
+>
 	<h2 class="text-subsubheader font-serif">Hi, I'm Emma Alexandria</h2>
 	<h1 class="font-sc text-hero-mobile md:text-hero">
 		high quality <br />
@@ -22,9 +25,7 @@
 		<Button href="#about-me">About me <ArrowDown size="1rem" /></Button>
 	</span>
 </section>
-<section
-	class="px-4 mt-64 bg-primary-500 text-mono-950 dark:text-mono-50 py-8 shadow-hard shadow-primary-700"
->
+<section class="px-4 mt-72 bg-primary-500 text-mono-950 dark:text-mono-50 py-8">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 		<Review author="Danijel Korent">
 			"Emma delivered excellent work, exceptionally fast! Her clear communication and proactive
@@ -41,26 +42,30 @@
 		</Review>
 	</div>
 </section>
-<section
-	class="max-w-content font-sans text-body mx-auto border-2 border-mono-950 rounded-md p-4 mt-16"
->
-	<Header id="about-me">About me</Header>
-	<Body>
-		I'm a passionate web developer and designer. I have a particular passion for web typgraphy.
-		Outside of work, I enjoy developing command-line tools and applications. I have experience in a
-		wide variety of technologies, ranging from Rust to Python. In my free time, I enjoy
-		argumentative writing, listening to albums, and making whatever pops into my mind.
-	</Body>
-	<Subheader>Technologies</Subheader>
-	<Body>
-		I work with a wide variety of technologies. My favourite frontend combination is Svelte with
-		TailwindCSS. I find most backends are served well enough by a PocketBase instance. However, I
-		also have considerable experience with Next.js and Hugo. I'm currently learning Vue and Nuxt.js.
-		I typically design mockups in Figma, and logos and other assets in Illustrator.
-	</Body>
-	<Subheader>Freelancing</Subheader>
-	<Body>
-		I currently work as a Freelancer through Upwork, which is where you should contact me if you're
-		interested in collaboration.
-	</Body>
+<section class="bg-mono-100 dark:bg-mono-900 py-16">
+	<div
+		class="max-w-content bg-mono-50 dark:bg-mono-950 p-8 rounded-large border-thick shadow-hard-high shadow-mono-950 dark:shadow-mono-50 font-sans text-body mx-auto border-mono-950 dark:border-mono-50"
+	>
+		<WindowButtons />
+		<Header class="drop-shadow-primary dark:drop-shadow-primary-dark" id="about-me">About me</Header
+		>
+		<Body>
+			I'm a passionate web developer and designer. I have a particular passion for web typgraphy.
+			Outside of work, I enjoy developing command-line tools and applications. I have experience in
+			a wide variety of technologies, ranging from Rust to Python. In my free time, I enjoy
+			argumentative writing, listening to albums, and making whatever pops into my mind.
+		</Body>
+		<Subheader class="drop-shadow-primary dark:drop-shadow-primary-dark">Technologies</Subheader>
+		<Body>
+			I work with a wide variety of technologies. My favourite frontend combination is Svelte with
+			TailwindCSS. I find most backends are served well enough by a PocketBase instance. However, I
+			also have considerable experience with Next.js and Hugo. I'm currently learning Vue and
+			Nuxt.js. I typically design mockups in Figma, and logos and other assets in Illustrator.
+		</Body>
+		<Subheader class="drop-shadow-primary dark:drop-shadow-primary-dark">Freelancing</Subheader>
+		<Body>
+			I currently work as a Freelancer through Upwork, which is where you should contact me if
+			you're interested in collaboration.
+		</Body>
+	</div>
 </section>

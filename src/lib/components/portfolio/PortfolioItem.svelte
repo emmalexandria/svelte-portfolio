@@ -2,6 +2,7 @@
 	import Icon from '@iconify/svelte';
 	import { type Snippet } from 'svelte';
 	import Image from 'svimg/Image.svelte';
+	import PortfolioIconLink from './PortfolioIconLink.svelte';
 
 	export interface IconLink {
 		href: string;
@@ -23,7 +24,7 @@
 </script>
 
 <div
-	class="grid-item flex flex-col justify-center border shadow-hard border-mono-950 dark:border-mono-50 p-4 rounded break-inside-avoid"
+	class="grid-item flex flex-col justify-center border shadow-hard bg-mono-50 dark:bg-mono-950 border-mono-950 dark:border-mono-50 p-4 rounded break-inside-avoid"
 >
 	<div class="w-full h-auto rounded overflow-clip mb-4">
 		{@render children()}
@@ -31,7 +32,9 @@
 	<span class="flex flex-row items-center">
 		<h2 class="text-body-header font-serif font-bold mr-auto">{title}</h2>
 		{#if github}
-			<a href={github.href}><Icon icon={github.icon} height="24" /></a>
+			<a class="hover:star-dark" href={github.href}
+				><PortfolioIconLink icon="fa6-brands:github" /></a
+			>
 		{/if}
 	</span>
 	<p>{description}</p>
