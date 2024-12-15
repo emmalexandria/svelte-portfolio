@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import { Star } from 'lucide-svelte';
+	import Icon from '@iconify/svelte';
 
 	interface Props {
 		children: Snippet;
@@ -15,7 +15,12 @@
 >
 	<span class="flex flex-row gap-2 mb-2">
 		{#each { length: 5 } as _, i}
-			<Star class="drop-shadow-star dark:drop-shadow-star-dark fill-primary-500 stroke-thin" />
+			<Icon
+				icon="ic:round-star"
+				height={24}
+				fill="fill-primary-500"
+				class="drop-shadow-star dark:drop-shadow-star-dark text-primary-500 stroke-thin"
+			/>
 		{/each}
 	</span>
 	<p class="text-body font-sans mb-4">{@render children()}</p>
