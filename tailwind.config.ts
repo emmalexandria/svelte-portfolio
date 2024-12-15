@@ -36,6 +36,7 @@ export default {
       },
       boxShadow: {
         'inner-hard': 'inset 4px 4px 0px 0',
+        'hard-low': '2px 2px 0px 0',
         'hard': '3px 3px 0px 0',
         'hard-high': '6px 6px 0px 0'
       },
@@ -51,7 +52,7 @@ export default {
         body: ["1rem", { lineHeight: "1.6", fontWeight: 400, letterSpacing: "0.03em" }],
         "body-large": ["1.25rem", { lineHeight: "1.6", fontWeight: 400, letterSpacing: "0.03em" }],
         "hero": ["4.77rem", { lineHeight: "1", fontWeight: 900, letterSpacing: "0.00em" }],
-        "hero-mobile": ["3.815rem", { lineHeight: "1.2", fontWeight: 900, letterSpacing: "0.00em" }],
+        "hero-mobile": ["3.052rem", { lineHeight: "1.2", fontWeight: 900, letterSpacing: "0.00em" }],
         "title": ["3.815rem", { lineHeight: "1.2", fontWeight: 700, letterSpacing: "0.03em" }],
         "header": ["3.052rem", { lineHeight: "1.2", fontWeight: 700, letterSpacing: "0.03em" }],
         "subheader": ["2.441rem", { lineHeight: "1.2", fontWeight: 600, letterSpacing: "0.03em" }],
@@ -63,7 +64,7 @@ export default {
           '50': '#F8F8F8',
           '100': '#eeeeee',
           '200': '#AFAFAF',
-          'gray-dark': '#8A8A8A',
+          'gray-dark': '#686868',
           '300': '#8A8A8A',
           '400': '#686868',
           '500': '#5A5A5A',

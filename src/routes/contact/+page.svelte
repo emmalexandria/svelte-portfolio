@@ -3,7 +3,6 @@
 </script>
 
 <section class="text-center mt-8 w-fit mx-auto">
-	<h1 class="font-sc text-title">contact me</h1>
 	<div class="flex flex-col gap-4">
 		<ContactCard
 			href="https://bsky.app/profile/emmalexandria.dev"

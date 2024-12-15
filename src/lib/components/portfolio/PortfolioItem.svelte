@@ -52,18 +52,20 @@
 </div>
 
 <style>
-	.grid-item {
-		margin-bottom: 2%;
-		width: 32%;
-	}
+	@media (min-width: 768px) {
+		.grid-item {
+			margin-bottom: 2%;
+			width: 32%;
+		}
 
-	.grid-item:nth-child(3n + 1) {
-		order: 1;
-	}
-	.grid-item:nth-child(3n + 2) {
-		order: 2;
-	}
-	.grid-item:nth-child(3n) {
-		order: 3;
+		.grid-item:nth-child(3n + 1) {
+			order: 1;
+		}
+		.grid-item:nth-child(3n + 2) {
+			order: 2;
+		}
+		.grid-item:nth-child(3n) {
+			order: 3;
+		}
 	}
 </style>

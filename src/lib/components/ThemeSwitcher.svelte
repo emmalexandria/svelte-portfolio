@@ -2,13 +2,9 @@
 </script>
 
 <script lang="ts">
-	import Palette from 'lucide-svelte/icons/palette';
-	import Moon from 'lucide-svelte/icons/moon';
-	import Sun from 'lucide-svelte/icons/sun';
 	import { onMount } from 'svelte';
 	import { ThemeOption } from '$lib/themes.svelte';
 	import ThemeToggle from './ThemeToggle.svelte';
-	import { Contrast } from 'lucide-svelte';
 	import Button from '$lib/components/button/Button.svelte';
 	import { fly, slide } from 'svelte/transition';
 
@@ -16,8 +12,13 @@
 	let highContrast = new ThemeOption('high-contrast', 'high-contrast', '(prefers-contrast: more)');
 
 	import { clickOutside } from '$lib';
+	import Icon from '@iconify/svelte';
 
 	let shown = $state(false);
+
+	const toggleMenu = () => {
+		shown = !shown;
+	};
 
 	onMount(() => {
 		dark.init();
@@ -48,21 +49,22 @@
 	}}
 >
 	<button
-		class="text-mono-700 h-full dark:text-mono-200 hover:text-mono-950 hover:dark:text-mono-50 p-2 rounded-full transition-all"
-		onclick={() => {
-			shown = !shown;
-		}}><Palette class="stroke-regular h-5" strokeWidth="2px" /></button
+		class="text-mono-950 h-full dark:text-mono-50 hover:text-mono-950 hover:dark:text-mono-50 p-2 rounded-full transition-all"
+		onclick={toggleMenu}
 	>
+		<Icon height={24} icon="lucide:palette" class="stroke-regular " />
+	</button>
 	{#if shown}
 		<div
-			transition:fly={{ delay: 50, duration: 100 }}
-			class="flex justify-center items-center flex-col gap-4 absolute end-0 top-0 translate-y-1/2 translate-x-[18px] p-4 bg-mono-50 dark:bg-mono-950 border-thick border-mono-950 dark:border-mono-50 rounded-large"
+			in:fly={{ duration: 250, y: -25 }}
+			out:fly={{ duration: 250, y: -25 }}
+			class="flex shadow-hard-high justify-center items-center flex-col gap-4 absolute left-0 top-0 translate-y-20 -translate-x-1/2 p-4 bg-mono-50 dark:bg-mono-950 border-thick border-mono-950 dark:border-mono-50 rounded-large"
 		>
 			<ThemeToggle theme={dark}>
-				<Moon class="stroke-regular" size="24px"></Moon>
+				<Icon icon="lucide:moon" height={24} />
 			</ThemeToggle>
 			<ThemeToggle theme={highContrast}>
-				<Contrast class="stroke-regular" size="24px"></Contrast>
+				<Icon icon="lucide:contrast" class="stroke-regular" height={24} />
 			</ThemeToggle>
 			<Button
 				size="small"
