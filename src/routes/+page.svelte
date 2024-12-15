@@ -9,6 +9,11 @@
 	import Icon from '@iconify/svelte';
 </script>
 
+<svelte:head>
+	<title>Emma Alexandria | Web designer & developer</title>
+	<meta name="description" content="Emma Alexandria's portfolio & personal website" />
+</svelte:head>
+
 <section class="px-4 select-none text-center mt-8 md:mt-32 w-fit mx-auto">
 	<div
 		class="bg-mono-50 dark:bg-mono-950 p-8 md:p-16 rounded-large shadow-hard-high shadow-mono-950 dark:shadow-mono-50 border-thick border-mono-950 dark:border-mono-50"

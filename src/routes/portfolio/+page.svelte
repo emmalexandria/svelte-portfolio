@@ -6,6 +6,11 @@
 	import Image from 'svimg/Image.svelte';
 </script>
 
+<svelte:head>
+	<title>Emma Alexandria | Portfolio</title>
+	<meta name="description" content="Emma Alexandria's project portfolio" />
+</svelte:head>
+
 <section class="px-4">
 	<PortfolioGrid>
 		<PortfolioItem
@@ -17,7 +22,7 @@
 				{ href: 'https://github.com/emmalexandria/material-tailwind', icon: 'fa6-brands:github' }
 			]}
 		>
-			<Image src="m3tw.png" />
+			<Image src="m3tw.png" alt="Picture of the m3tw site" />
 		</PortfolioItem>
 		<PortfolioItem
 			title="fRCON"
@@ -25,7 +30,7 @@
 			technologies={['Rust']}
 			description="CLI utility built in Rust for interacting with the RCON protocol"
 		>
-			<Image src="frcon.png" />
+			<Image src="frcon.png" alt="Screenshot of fRCON running" />
 		</PortfolioItem>
 
 		<PortfolioItem
@@ -37,7 +42,7 @@
 				{ href: 'https://github.com/emmalexandria/newbmi', icon: 'fa6-brands:github' }
 			]}
 		>
-			<Image src="bmicalc.png" />
+			<Image src="bmicalc.png" alt="Screenshot of the BMI calculator" />
 		</PortfolioItem>
 		<PortfolioItem
 			title="optimg"
@@ -45,7 +50,7 @@
 			description="CLI utility which resizes images for use in srcset in images"
 			icons={[{ href: 'https://github.com/emmalexandria/optimg', icon: 'fa6-brands:github' }]}
 		>
-			<Image src="optimg.png" />
+			<Image src="optimg.png" alt="Screenshot of the command line arguments for optimg" />
 		</PortfolioItem>
 		<PortfolioItem
 			title="terminal-ts"
@@ -53,7 +58,7 @@
 			description="Typescript library for building terminal-style user interfaces with virtual file systems."
 			icons={[{ href: 'https://github.com/emmalexandria/terminal-ts', icon: 'fa6-brands:github' }]}
 		>
-			<Image src="terminalts.png" />
+			<Image src="terminalts.png" alt="The terminal-ts logo" />
 		</PortfolioItem>
 	</PortfolioGrid>
 </section>

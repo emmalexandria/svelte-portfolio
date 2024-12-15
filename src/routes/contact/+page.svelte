@@ -2,6 +2,11 @@
 	import ContactCard from '$src/lib/components/ContactCard.svelte';
 </script>
 
+<svelte:head>
+	<title>Emma Alexandria | Contact</title>
+	<meta name="description" content="Contact links for Emma Alexandria" />
+</svelte:head>
+
 <section class="text-center mt-8 w-fit mx-auto">
 	<div class="flex flex-col gap-4">
 		<ContactCard

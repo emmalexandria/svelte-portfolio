@@ -50,6 +50,7 @@
 >
 	<button
 		class="text-mono-950 h-full dark:text-mono-50 hover:text-mono-950 hover:dark:text-mono-50 p-2 rounded-full transition-all"
+		aria-label="Theme switcher"
 		onclick={toggleMenu}
 	>
 		<Icon height={24} icon="lucide:palette" class="stroke-regular " />
