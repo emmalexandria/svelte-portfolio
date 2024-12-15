@@ -9,7 +9,7 @@
 	}
 	import clsx from 'clsx';
 
-	let { children, href, target = '_self' }: Props = $props();
+	let { children, href, target }: Props = $props();
 	let active = $derived($page.url.pathname == href);
 	let classes = $derived(
 		clsx(

@@ -28,7 +28,11 @@
 		</h1>
 		<span class="mt-8 flex flex-row gap-4 mx-auto w-fit">
 			<Button href="/contact" primary>Work with me</Button>
-			<Button href="#about-me">About me <Icon icon="lucide:arrow-down" /></Button>
+			<Button href="#about-me">
+				<span class="flex flex-row items-center gap-2">
+					About me <Icon icon="lucide:arrow-down" />
+				</span>
+			</Button>
 		</span>
 	</div>
 </section>
