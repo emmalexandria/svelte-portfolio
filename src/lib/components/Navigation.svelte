@@ -11,7 +11,7 @@
 
 <div class="px-4 pt-4 w-full">
 	<nav
-		class=" shadow-hard-high bg-mono-50 dark:bg-mono-950 p-4 flex flex-row items-center border-thick rounded-giant border-mono-950 dark:border-mono-50"
+		class=" shadow-hard-high shadow-mono-950 dark:shadow-mono-50 bg-mono-50 dark:bg-mono-950 p-4 flex flex-row items-center border-thick rounded-giant border-mono-950 dark:border-mono-50"
 	>
 		<a href="/" aria-label="Link to home" class="mr-auto w-12 h-12 text-mono-950 dark:text-mono-50">
 			<Logo />
