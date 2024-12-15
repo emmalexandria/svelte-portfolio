@@ -13,15 +13,11 @@
 	<nav
 		class=" shadow-hard-high bg-mono-50 dark:bg-mono-950 p-4 flex flex-row items-center border-thick rounded-giant border-mono-950 dark:border-mono-50"
 	>
-		<a
-			href="/"
-			aria-label="Link to home"
-			class="md:mr-auto w-12 h-12 text-mono-950 dark:text-mono-50"
-		>
+		<a href="/" aria-label="Link to home" class="mr-auto w-12 h-12 text-mono-950 dark:text-mono-50">
 			<Logo />
 		</a>
 		<div
-			class="relative w-full md:w-fit mx-auto md:mx-0"
+			class="relative w-fit"
 			use:clickOutside={() => {
 				shown = false;
 			}}
@@ -34,14 +30,13 @@
 				aria-expanded={shown}
 			>
 				<Icon height={24} icon="lucide:menu" />
-				<p class="font-bold">Menu</p>
 			</button>
 			{#if shown}
 				<ul
 					in:fly={{ duration: 250, y: -25 }}
 					out:fly={{ duration: 250, y: -25 }}
 					id="navigationMenu"
-					class="flex w-full rounded flex-col p-4 md:hidden absolute bg-mono-50 dark:bg-mono-950 shadow-hard-high border-thick border-mono-950 dark:border-mono-50 left-1/2 top-0 translate-y-20 -translate-x-1/2 gap-4"
+					class="flex rounded flex-col p-4 md:hidden absolute bg-mono-50 dark:bg-mono-950 shadow-hard-high border-thick border-mono-950 dark:border-mono-50 left-1/2 top-0 translate-y-20 -translate-x-1/2 gap-4"
 				>
 					<NavItems></NavItems>
 				</ul>

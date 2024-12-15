@@ -16,7 +16,7 @@
 
 <section class="px-4 select-none text-center mt-8 md:mt-32 w-fit mx-auto">
 	<div
-		class="bg-mono-50 dark:bg-mono-950 p-8 md:p-16 rounded-large shadow-hard-high shadow-mono-950 dark:shadow-mono-50 border-thick border-mono-950 dark:border-mono-50"
+		class="bg-mono-50 dark:bg-mono-950 p-8 md:p-16 rounded-large shadow-hard shadow-mono-950 dark:shadow-mono-50 border-thick border-mono-950 dark:border-mono-50"
 	>
 		<h2 class="text-body-header md:text-subsubheader font-serif">Hi, I'm Emma Alexandria</h2>
 		<h1 class="font-sc text-hero-mobile md:text-hero">
@@ -55,7 +55,7 @@
 </section>
 <section class="px-4 bg-mono-100 dark:bg-mono-900 py-16">
 	<div
-		class="max-w-content bg-mono-50 dark:bg-mono-950 p-8 rounded-large border-thick shadow-hard-high shadow-mono-950 dark:shadow-mono-50 font-sans text-body mx-auto border-mono-950 dark:border-mono-50"
+		class="max-w-content bg-mono-50 dark:bg-mono-950 p-8 rounded-large border-thick shadow-hard shadow-mono-950 dark:shadow-mono-50 font-sans text-body mx-auto border-mono-950 dark:border-mono-50"
 	>
 		<WindowButtons />
 		<Header class="drop-shadow-primary dark:drop-shadow-primary-dark" id="about-me">About me</Header
