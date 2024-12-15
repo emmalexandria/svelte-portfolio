@@ -6,6 +6,7 @@ node_modules
 /.svelte-kit
 /build
 /static/g
+.unlighthouse
 
 # OS
 .DS_Store
