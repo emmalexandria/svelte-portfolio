@@ -32,7 +32,7 @@
 		{#if icons}
 			<div class="flex flex-row items-center gap-2">
 				{#each icons as icon}
-					<a class="hover:star-dark" target="_blank" href={icon.href}>
+					<a class="hover:star-dark p-2" target="_blank" href={icon.href}>
 						<PortfolioIconLink icon={icon.icon} height={16} />
 					</a>
 				{/each}
